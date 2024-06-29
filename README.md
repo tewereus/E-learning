@@ -9,10 +9,6 @@ A comprehensive e-learning platform built using html, css and javascript, design
 - Enrollment and registration system for students
 - Video-based lessons with interactive quizzes and assignments
 - Discussion forums for students to interact and collaborate
-- Instructor tools for grading, feedback, and progress tracking
-- Responsive and mobile-friendly design
-- Secure user authentication and authorization
-- Admin panel for managing users, courses, and platform settings
 
 ### Getting Started
 

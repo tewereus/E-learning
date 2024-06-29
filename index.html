@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Programming</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!----------------------------- Header ------------------------->
+    <div class="header">
+        
+        <nav>
+            <div class="logo-icon">
+                <a href="./index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+                <h1><a href="./index.html">Prog</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#courses">Courses</a>
+                    <ul class="drop-down">
+                        <li><a href="lecture/html/html_lecture.html">Html</a></li><hr>
+                        <li><a href="lecture/css/css_lecture.html">Css</a></li><hr>
+                        <li><a href="lecture/sql/sql_lecture.html">SQL</a></li><hr>
+                        <li><a href="lecture/java/java_lecture.html">Java</a></li><hr>
+                        <li><a href="lecture/php/php_lecture.html">PHP</a></li>
+                    </ul>
+                </li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+                <li><button class="login-btn" onclick="document.getElementById('login-form').style.display='block'">Log In</button></li>
+            </ul>
+            <a href="#" class="menu" onclick="openNav()">&#9776;</a>
+            
+            <div id="myNav" class="overlay">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Home</a>
+                    <a href="#courses">Courses</a>
+                    <!-- <button class="drop-down-btn">Courses &#9660;</button>
+                    <div class="dropdown-container">
+                        <a href="lecture/html/html_lecture.html">Html</a><hr>
+                        <a href="lecture/css/css_lecture.html">Css</a><hr>
+                        <a href="lecture/sql/sql_lecture.html">SQL</a><hr>
+                        <a href="lecture/java/java_lecture.html">Java</a><hr>
+                        <a href="lecture/php/php_lecture.html">PHP</a>
+                    </div> --> 
+                    <a href="#reviews">Reviews</a>
+                    <a href="#footer">Contact Us</a>
+                </div>
+            </div>
+            
+            
+            
+        </nav>
+       
+        <div class="content">
+            <h1>Learn Programming</h1>
+            <form>
+                <input type="search" placeholder="&#x1F50E;&#xFE0E; what do you want to learn?">
+                <button type="submit">Find Course</button>
+            </form>
+            
+            <div class="catagory-list">
+                <a href="lecture/html/html_lecture.html" class="catagory-link">Html</a>
+                <a href="lecture/css/css_lecture.html" class="catagory-link">CSS</a>
+                <a href="lecture/sql/sql_lecture.html" class="catagory-link">SQL</a>
+                <a href="lecture/php/php_lecture.html" class="catagory-link">PHP</a>
+                <a href="lecture/java/java_lecture.html" class="catagory-link">Java</a>
+            </div>
+        </div>
+        
+        <!--------------------------Login Form---------------------------->
+
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                </div>
+                <form id="login" class="input-group-login">
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"> <span class="termss">Remember password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="register" class="input-group-register">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="check-box" required> <span class="termss" >I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- --------------------------Courses--------------------------- -->
+    <div id="courses" class="courses">
+        
+        <div class="course-content">
+
+            <div class="courses-text">
+                <h2>Web <span>Development</span></h2>
+                <a href="#" class="view-all-btn">View All</a>
+            </div>
+
+            <div class="web-development">
+                <!-- <a class="prev">&#10094;</a> -->
+
+                <div class="course">
+                    <div class="work">
+                        <img src="images/html-tagst.jpg">
+                        <div class="layer">
+                            <h2>html</h2>
+                            <p>Standard markup language for creating Web pages. Contains Tags and
+                            Attributes that are used to design the web pages.</p>
+                            <a href="lecture/html/html_lecture.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course">
+                    <div class="work">
+                        <img src="images/css-code.jpg">
+                        <div class="layer">
+                            <h2>css</h2>
+                            <p>CSS (Cascading Style Sheets) is used to styles web pages. CSS is the language we use to style an HTML document.</p>
+                            <a href="lecture/css/css_lecture.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course">
+                    <div class="work">
+                        <img src="images/javascript.jpg">
+                        <div class="layer">
+                            <h2>javascript</h2>
+                            <p>JavaScript is the programming language of the Web. JavaScript to program the behavior of web pages</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a class="next">&#10095;</a> -->
+            </div>
+        </div>
+
+        <div class="course-content">
+            
+            <div class="courses-text">
+                <h2>Game <span>Development</span></h2>
+                <a href="#" class="view-all-btn">View All</a>
+            </div>
+            
+            <div class="web-development">
+                <div class="course">
+                    <div class="work">
+                        <img src="images/unity_logo.jpeg">
+                        <div class="layer">
+                            <h2>Unity</h2>
+                            <p>Unity the programming language of the Web. Unity to program the behavior of web pages</p>
+                            <a href="lecture/html/html_lecture.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course">
+                    <div class="work">
+                        <img src="images/unreal.jpg">
+                        <div class="layer">
+                            <h2>Unreal Engine</h2>
+                            <p>Unreal Engine the programming language of the Web. Unreal Engine to program the behavior of web pages</p>
+                            <a href="lecture/css/css_lecture.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course">
+                    <div class="work">
+                        <img src="images/cryengine.jpg">
+                        <div class="layer">
+                            <h2>Kivy</h2>
+                            <p>Kivy the programming language of the Web. Kivy to program the behavior of web pages</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- <div class="course">PHP</div>
+                        <div class="course">REACT JS</div>
+                        <div class="course">ANGULAR JS</div>
+                        <div class="course">VUE JS</div>
+                        <div class="course">TAILWIND CSS</div>
+                        <div class="course">NODE JS</div> -->
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+        
+            </div>
+        </div>
+
+        <div class="course-content">
+        
+            <div class="courses-text">
+                <h2>Programming <span>Languages</span></h2>
+                <a href="#" class="view-all-btn">View All</a>
+            </div>
+        
+            <div class="web-development">
+                <div class="course">
+                    <div class="work">
+                        <img src="images/java.jpg">
+                        <div class="layer">
+                            <h2>Java</h2>
+                            <p>Java is the programming language of the Web. Java to program the behavior of web pages</p>
+                            <a href="lecture/java/java_lecture.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="course">
+                    <div class="work">
+                        <img src="images/python.jpg">
+                        <div class="layer">
+                            <h2>Python</h2>
+                            <p>Python the programming language of the Web. Python to program the behavior of web pages</p>
+                            <a href="lecture/css/css_lecture.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="course">
+                    <div class="work">
+                        <img src="images/c++.jpg">
+                        <div class="layer">
+                            <h2>C++</h2>
+                            <p>C++ is the programming language of the Web. C++ to program the behavior of web pages</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <a href="#" class="see-more-btn">See More</a>
+    </div>
+
+
+    <!---------------------------Services----------------------------------->
+    <div class="service-swipe">
+        <div class="diffSection" id="services_section">
+            <center>
+                <p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p>
+            </center>
+        </div>
+        <a href="subjects/computer_courses.html">
+            <div class="s-card"><img src="images/icon/computer-courses.png">
+                <p>Free Online Courses</p>
+            </div>
+        </a>
+        <a href="subjects/jee.html">
+            <div class="s-card"><img src="images/icon/brainbooster.png">
+                <p>Building Concepts for Competitive Exams</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="s-card"><img src="images/icon/online-tutorials.png">
+                <p>Online Video Lectures</p>
+            </div>
+        </a>
+        <a href="subjects/jee.html#sample_papers">
+            <div class="s-card"><img src="images/icon/papers.jpg">
+                <p>Sample Papers of Various Competitive Exams</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="s-card"><img src="images/icon/p3.png">
+                <p>Performance and Ranking Report</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/discussion.png">
+                <p>Discussion with Our Tutors & Mentors</p>
+            </div>
+        </a>
+        <a href="subjects/quiz.html">
+            <div class="s-card"><img src="images/icon/q1.png">
+                <p>Daily Brain Teasing Questions to Improve IQ</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/help.png">
+                <p>24x7 Online Support</p>
+            </div>
+        </a>
+    </div>
+
+    <!------------------------- Reviews --------------------------->
+    
+    
+    <div id="reviews" class="review">
+        <div class="diffSection" id="review_section">
+                <p>What the Students Say About Us?</p>
+        </div>
+        <div class="reviews">
+            <div class="rev-container">
+                <div class="rev-card">
+                    <div class="identity">
+                        <img src="images/creator/humanNotExist1.jpg">
+                        <p>Rachel Green</p>
+                        <h6>Java</h6>
+                        <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+                                src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+                        </div>
+                    </div>
+                    <div class="rev-cont">
+                        <p id="content">
+                            This was an amazing experience for me. I had a little experience in coding but I think it has helped me
+                            think things through in a much more analytical manner...
+                        </p>
+                    </div>
+                </div>
+                <div class="rev-card">
+                    <div class="identity">
+                        <img src="images/creator/humanNotExist2.jpg">
+                        <p>Bruno Fernandes</p>
+                        <h6>C/C++</h6>
+                        <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+                                src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+                        </div>
+                    </div>
+                    <div class="rev-cont">
+                        <p id="content">
+                            This was my first complete course. I attended the Javascript course in last month and
+                            loved it which made me join the full course...
+                        </p>
+                    </div>
+                </div>
+                <div class="rev-card">
+                    <div class="identity">
+                        <img src="images/creator/humanNotExist3.jpg">
+                        <p>Luke Shaw</p>
+                        <h6>SQL</h6>
+                        <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+                                src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+                        </div>
+                    </div>
+                    <div class="rev-cont">
+                        <p id="content">
+                            This was an amazing experience for me. I had a little experience in coding but I think it has helped me
+                            think things through in a much more analytical manner...
+                        </p>
+                    </div>
+                </div>
+                <div class="rev-card">
+                    <div class="identity">
+                        <img src="images/creator/humanNotExist4.jpg">
+                        <p>pheobe buffey</p>
+                        <h6>Python</h6>
+                        <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+                                src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+                        </div>
+                    </div>
+                    <div class="rev-cont">
+                        <p id="content">
+                            This was my first complete course. I attended the Javascript course in last month and
+                            loved it which made me join the full course...
+                        </p>
+                    </div>
+                </div>
+
+                
+
+                <div class="rev-card">
+                    <div class="identity">
+                        <img src="images/creator/humanNotExist1.jpg">
+                        <p>Rachel Green</p>
+                        <h6>Java</h6>
+                        <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+                                src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+                        </div>
+                    </div>
+                    <div class="rev-cont">
+                        <p id="content">
+                            This was an amazing experience for me. I had a little experience in coding but I think it has helped me
+                            think things through in a much more analytical manner...
+                        </p>
+                    </div>
+                </div>
+                <div class="rev-card">
+                    <div class="identity">
+                        <img src="images/creator/humanNotExist2.jpg">
+                        <p>Bruno Fernandes</p>
+                        <h6>C/C++</h6>
+                        <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+                                src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+                        </div>
+                    </div>
+                    <div class="rev-cont">
+                        <p id="content">
+                            This was my first complete course. I attended the Javascript course in last month and
+                            loved it which made me join the full course...
+                        </p>
+                    </div>
+                </div>
+                <div class="rev-card">
+                    <div class="identity">
+                        <img src="images/creator/humanNotExist3.jpg">
+                        <p>Luke Shaw</p>
+                        <h6>SQL</h6>
+                        <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+                                src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+                        </div>
+                    </div>
+                    <div class="rev-cont">
+                        <p id="content">
+                            This was an amazing experience for me. I had a little experience in coding but I think it has helped me
+                            think things through in a much more analytical manner...
+                        </p>
+                    </div>
+                </div>
+                <div class="rev-card">
+                    <div class="identity">
+                        <img src="images/creator/humanNotExist4.jpg">
+                        <p>pheobe buffey</p>
+                        <h6>Python</h6>
+                        <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+                                src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+                        </div>
+                    </div>
+                    <div class="rev-cont">
+                        <p id="content">
+                            This was my first complete course. I attended the Javascript course in last month and
+                            loved it which made me join the full course...
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!------------------------- Footer ---------------------------->
+    
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Certificate</h4>
+                    <ul>
+                        <li><a href="#">Exercises</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="#">Exam</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------javascript--------------------------->
+
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+
+	<script>
+        var headerr = document.getElementsByClassName('header');
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- <script>
+        var dropdown = document.getElementsByClassName("drop-down-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    // this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+    </script> -->
+
+    <script src="index.js" defer></script>
+
+</body>
+</html>

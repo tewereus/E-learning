@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+}
+
+.css-nav {
+
+    z-index: 10;
+}
+
+.css-nav div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.css-nav div a {
+    color: #ddd;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.logoo {
+    margin-left: 2rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.side-overlay {
+
+    height: 86.1%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 13.9%;
+    left: 0;
+    background-color: rgba(20, 20, 30, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.side-overlay-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.side-overlay-content>a {
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+.side-overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.side-overlay a:hover,
+.side-overlay a:focus {
+    color: #f1f1f1;
+}
+
+.side-overlay .side-closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 26px;
+}
+
+
+.sidebar-menu {
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 13%;
+}
+
+
+
+
+
+
+
+
+.css-container {
+    background: #222;
+    max-width: 100%;
+    margin-left: 15%;
+    min-height: 84vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #bbb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    cursor: pointer;
+}
+
+.css-sidebar {
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #555;
+    width: 15%;
+    height: 84vh;
+    overflow: auto;
+}
+
+.css-sidebar:hover {
+    overflow-y: auto;
+}
+
+.css-sidebar button {
+    padding: 0.7rem 0;
+    background: #aaa;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.css-sidebar button:nth-child(1) {
+    background: #e91e63;
+    opacity: 0.7;
+    color: #eee;
+}
+
+.css-sidebar button:hover {
+    background: #e91e63;
+    opacity: 0.8;
+    color: #eee;
+    cursor: pointer;
+}
+
+.css-content {
+    padding: 3rem;
+    color: #aaa;
+}
+
+.css-content h1 {
+    background: linear-gradient(to right, #e91e63, #fa4b37);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.css-content ul {
+    padding: 1rem 3rem;
+}
+
+.css-content ul li {
+    padding-top: 0.7rem;
+}
+
+.css-content h3 {
+    background: linear-gradient(to right, #e91e63, #fa4b37);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+
+
+/* -------------------- Responsive ---------------------- */
+
+@media screen and (max-width:900px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .sidebar-menu {
+        display: block;
+    }
+
+    .overlay a {
+        font-size: 20px;
+        /* width: 100%; */
+    }
+
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+
+        top: 0;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .css-sidebar {
+        display: none;
+    }
+
+    .css-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}

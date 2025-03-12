@@ -1,6 +1,8 @@
-## E-Learning Platform
+### E-Learning Platform
 
 A comprehensive e-learning platform built using html, css and javascript, designed to provide an engaging and interactive learning experience for students and instructors.
+
+### 📸 Screenshots
 
 ### Features
 

@@ -21,4 +21,26 @@ A comprehensive e-learning platform built using html, css and javascript, design
 Clone the repository:
    ```
    git clone https://github.com/tewereus/E-learning.git
-   ```
+   cd E-learning
+```
+2️⃣ Install Dependencies
+```
+npm install
+```
+3️⃣ Start the Development Server
+```
+npm start
+```
+The application will be accessible at:
+➡ http://localhost:3000
+
+### 🤝 Contributing
+Contributions are welcome! To contribute:
+
+### 📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+### 📩 Contact
+📧 Email: tewereus12312@gmail.com
+
+🔗 LinkedIn: www.linkedin.com/in/tewolde-gebreyesus-3434472b6
